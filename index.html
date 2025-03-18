@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Amigo Secreto</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <header class="header-banner">
+            <div><h1 class="ko-title"><span class="ko-t-1">비</span><span class="ko-t-2">밀</span><span class="ko-t-3">친</span><span class="ko-t-4">구</span></h1></div>
+            <div><h2 class="es-title">Amigo Secreto</h2></div>
+        </header>
+        <div class="banner">
+            <div class="img-container">
+            </div>
+            <div class="text-container">
+                <p class="korean-text">
+                    <span class="short-text">비밀 친구는 친구들 사이에서 아주 재미있는 게임입니다. 이 게임은 보통 크리스마스나 특별한 행사에서 진행됩니다.</span>
+                    <span class="long-text">비밀 친구는 친구들 사이에서 아주 재미있는 게임입니다. 이 게임은 보통 크리스마스나 특별한 행사에서 진행됩니다. 참가자들은 서로의 이름을 추첨하여 비밀리에 선물을 준비합니다. 선물은 일반적으로 상대방이 좋아할 만한 것들로 선택됩니다.</span>
+                </p>
+            </div>
+        </div>
+        
+        <section class="input-section">
+            <div class="container">
+                <div class="section-title-ko"><h3 >친구의 이름을 입력하세요.</h3></div>
+                
+                <div class="section-title-es">
+                    <div class="nombreamig"><h3>Digite el nombre de sus amigos</h3></div>
+                    <div class="i-contain"><img src="https://i.pinimg.com/originals/b8/a5/fa/b8a5fa100ffb73f3dfcb4f94270959d6.gif">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-wrapper-i"><input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre"></div>
+                    <div class="input-wrapper-b"><button class="button-add" onclick="agregarAmigo()">Añadir</button></div>
+                </div>
+            </div>
+            <div class="sp-b-container">
+                <div class="span"></div>
+                <div class="button-container">
+                    <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                        Sortear amigo
+                    </button>
+                </div>
+            </div>
+            <div class="l-r-container">
+                <div class="name-list-con">
+                    <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                </div>
+                <div id="resultado" class="resultado-container">
+                </div>  
+            </div>
+        </section>
+        <div  class="input-wrapper-c"><button id="botonReiniciar" class="button-reset" onclick="resetear()" style="display: none;">Reiniciar</button></div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
